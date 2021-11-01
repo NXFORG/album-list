@@ -1,0 +1,9 @@
+article {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+}

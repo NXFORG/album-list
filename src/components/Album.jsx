@@ -1,13 +1,14 @@
 import React from 'react'
 import { Cover } from '../stories/Covers';
+import './album.css';
 
 export const Album = ({title, artist, image}) => {
     return (
-        <li>
+        <section>
             <figure>
                 <Cover image={image}/>
                 <figcaption><strong>{title}</strong> - <em>{artist}</em></figcaption>
             </figure>
-        </li>
+        </section>
     )
 }
