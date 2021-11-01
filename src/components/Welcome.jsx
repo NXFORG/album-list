@@ -1,3 +1,3 @@
 import React from 'react';
-
-export const Welcome = () => <h1>Welcome to the App</h1>
+import './welcome.css';
+export const Welcome = () => <h1 id="pageTitle">Welcome to the App</h1>
