@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './tracks.css';
-import { Button } from '../button/button';
+import { Button } from '../Button/button';
 
 export const Tracks = ({ artist, tracklist }) => {
 
