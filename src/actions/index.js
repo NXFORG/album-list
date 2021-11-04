@@ -1,0 +1,1 @@
+export const addAlbum = album => ({ type: 'ADD_ALBUM', payload: album })

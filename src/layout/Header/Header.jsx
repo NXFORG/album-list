@@ -6,7 +6,7 @@ export const Header = () => {
     return (
         <nav>
             <NavLink exact to='/'>Home</NavLink>
-            <NavLink to='/Lyrics'>Lyrics</NavLink>
+            <NavLink to='/new'>Add Album</NavLink>
         </nav>
     )
 }

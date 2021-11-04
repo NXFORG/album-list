@@ -1,8 +1,9 @@
 import React from 'react';
 import { Album } from './Album';
+import { useSelector } from 'react-redux';
 import './albums.css'
 
-const albums = [
+/* const albums = [
     { title: 'Unknown Pleasures', artist: 'Joy Division', tracklist: [
         'Disorder',
         'Day of the Lords',
@@ -58,9 +59,10 @@ const albums = [
     { title: 'Goodie Bag', artist: 'Still Woozy', tracklist: [
         'Goodie Bag'
     ], image: 'https://m.media-amazon.com/images/I/81Q9b+cFbvL._SS500_.jpg' }
-]
+] */
 
 export const Albums = () => {
+    const albums = useSelector((store) => store.albums);
     const renderAlbums = () => albums.map((a, i) => <Album key={i} title={a.title} artist={a.artist} tracklist={a.tracklist} image={a.image}/>);
 
     return (

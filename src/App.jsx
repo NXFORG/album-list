@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 //import * as Pages from './pages';
 import { Header } from './layout/Header/Header';
 import { Home } from './pages/home';
-import { Lyrics} from './pages/lyrics';
+import { NewAlbum } from './pages/new';
 import './style.css';
 
 const App = () => {
@@ -14,8 +14,8 @@ const App = () => {
                 <Route exact path="/">
                     <Home />
                 </Route>
-                <Route path="/lyrics">
-                    <Lyrics />
+                <Route path="/new">
+                    <NewAlbum />
                 </Route>
                 <Route>
                     <h1>Page doesn't exist</h1>

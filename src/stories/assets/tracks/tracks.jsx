@@ -3,6 +3,7 @@ import './tracks.css';
 import { Button } from '../Button/button';
 
 export const Tracks = ({ artist, tracklist }) => {
+    console.log(tracklist);
 
     const displayTracks = () => {
         return (
