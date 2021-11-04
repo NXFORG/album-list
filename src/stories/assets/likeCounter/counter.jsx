@@ -22,11 +22,9 @@ export const Counter = () => {
 
     return (
         <>
-            {/* <button value="👍" onClick={incrementLikeValue} disabled={dislikeValue || likeValue > 0 ? true : false }>👍</button> */}
-            <button value="👍" onClick={updateLikes} >👍</button>
+            <button value="👍" onClick={updateLikes} disabled={!disliked}>👍</button>
             <span>{ likeValue }</span>
-            {/* <button value="👎" onClick={incrementDislikeValue} disabled={likeValue || dislikeValue > 0 ? true : false }>👎</button> */}
-            <button value="👎" onClick={updateDislikes} >👎</button>
+            <button value="👎" onClick={updateDislikes} disabled={!liked}>👎</button>
             <span>{ dislikeValue }</span>
         </>
     );

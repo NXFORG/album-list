@@ -18,7 +18,11 @@ export const Lyrics = ({ artist, track }) => {
     }, [artist, track])
     return (
         <>
-            <p>{lyrics}</p>
+            <article className='backgroundCover'>
+                <section className='lyricDisplay'>
+                    <p>{lyrics}</p>
+                </section>
+            </article>
         </>
     );
   };

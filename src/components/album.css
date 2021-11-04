@@ -5,3 +5,13 @@
     font-size: 1.2em;
     padding: 10px;
 }
+
+.deleteButton {
+    background-color: darkred;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: 10px;
+    min-width: 44px;
+    color: #fff;
+}

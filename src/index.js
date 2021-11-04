@@ -69,6 +69,10 @@ function albumReducer(state=seedState, action){
     switch(action.type){
         case 'ADD_ALBUM':
             return{ ...state, albums: [...state.albums, action.payload] }
+        case 'DELETE_ALBUM':
+            const updateAlbums = state.albums.filter(a => a.title !== action.payload)
+            console.log(updateAlbums)
+            return {...state, albums:updateAlbums}
         default:
             return state;
     }

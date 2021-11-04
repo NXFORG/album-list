@@ -1,7 +1,37 @@
+.newAlbumTitle {
+    text-align: center;
+}
+.formContainer {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
 form {
-    margin-left: 100px;
+    width: 60%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 form > * {
+    box-sizing: border-box;
     display: block;
+    width: 100%;
 }
+
+form > input, textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+input[type='submit']{
+    background-color: rgb(68, 104, 201);
+    border: 0;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.2em;margin-top: 20px;}
